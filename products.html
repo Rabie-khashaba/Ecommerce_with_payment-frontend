@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>product details</title>
+         
+        <link rel="stylesheet" href="css/styl.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <script src="Js/jquery-3.6.0.min.js"></script>
+
+
+        <style>
+             .small-img-group
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .small-img-col
+                {
+                    flex-basis: 24%;
+                    cursor: pointer;
+                }
+
+                .btn-cart
+                {
+                    background: #fd8c66;
+                    margin-top: 10px;
+                    align-items: center
+                }
+             .prod select
+             {
+                 display: block;
+                 padding: 5px 10px;
+                 font-size: 16px;
+                 border-radius: 5px;
+             }
+             .prod input
+             {
+                 width: 50px;
+                 height: 48px;
+                 padding-left: 10px;
+                 font-size: 16px;
+                 margin-right: 10px
+             }
+              .prod input:focus
+             {
+                 outline: none;
+             }
+         </style>
+         
+     </head>
+    <body>
+        <!--Start Navigation-->
+        <nav class="nav">
+            <div class="nav-menu flex-row">
+                <div class="nav-brand">
+                    <a href="#" class="text-gray">Blooger</a>
+                </div>
+                <div  class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div>
+                   <ul class="nav-items">
+                           <li class="nav-link">
+                               <a href="#">Home</a>
+                           </li>
+                           <li class="nav-link">
+                               <a href="">Product</a>
+                           </li>
+                           <li class="nav-link">
+                               <a href="#">Contact Us</a>
+                           </li>
+                           <li class="nav-link">
+                               <a href="#">About Us</a>
+                           </li>
+                   </ul>
+                </div>
+                <div class="social text-gray">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+       </nav>
+       <!--End Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+              <div class="container">
+                <img src="img/logo1.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span ><i id="bar" class="fas fa-bars"></i></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="http:www.google.com">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#brand">Shope</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contact Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fal fa-search"></i>
+                                    <i class="fal fa-shopping-bag"></i>
+                                </li>
+
+                            </ul>
+                    </div>
+              </div>
+        </nav>
+         <!--End navbar-->
+        <section class="container prod my-5 pt-5">
+            <div class="row mt-5">
+                <div id="img_prod" class="col-lg-5 col-md-12 col-12">
+                    <img class=" img-product img-fluid w-90 pb-1" src="img_product/product1.jpg" alt="">
+                    <div class="small-img-group">
+                        <div class="small-img-col">
+                            <img src="img_product/product2.jpg" class="small-img" alt="" width="100%">
+                        </div>
+                         <div class="small-img-col">
+                            <img src="img_product/product5.jfif" class="small-img" alt="" width="100%">
+                        </div>
+                         <div class="small-img-col">
+                            <img src="img_product/product4.jpg" class="small-img" alt="" width="100%">
+                        </div>
+                         <div class="small-img-col">
+                            <img src="img_product/product6.jfif" class="small-img" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h6>Home / T-Shirt</h6>
+                    <h3 class="my-3">Men's Fashion T Shirt</h3>
+                    <h2 >$150</h2>
+                    <select class="my-3">
+                        <option>Select Size</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                        <option>Small</option>
+                        <option>Large</option>
+                    </select><br>
+                    <input type="number" value="1">
+                    <button class="btn-cart">Add To Cart</button>
+                    <h4 class="mt-5 mb-5" >Product Details</h4>
+                    <span >
+                        Comfortable & classic, this performance T-shirt featuring TRUMP WINERY on the left chest is there for you, whether you're training for our Race & Taste 10k or enjoying a lazy Sunday at the Tasting Room. •Size: large: 30" tall x 23" wide •Material: 52% organic cotton, 43% bamboo viscose, 5% elastane
+                    </span>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+                <script src="js/jquery-3.6.0.min.js"></script> 
+                <script src="js/bootstrap.min.js"></script>   
+        
+        
+    </body>
+</html>
